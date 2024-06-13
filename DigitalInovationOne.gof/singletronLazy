@@ -1,0 +1,21 @@
+package DigitalInovationOne.gof;
+
+/** 
+ * singletron "preguiçoso".
+ * 
+ * @author cristopheroan
+*/
+public class singletronLazy{
+    public static singletronLazy instancia;
+
+    private singletronLazy() {
+        super();
+    }
+
+    public static singletronLazy gatInstancia() {
+        if(instancia == null ) {
+            instancia = new singletronLazy();
+        }
+        return instancia;
+    }
+}
