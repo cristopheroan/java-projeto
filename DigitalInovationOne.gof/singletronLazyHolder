@@ -1,0 +1,23 @@
+
+
+/**
+ * 
+ * singletron "Lazy Holder"
+ * 
+ * @author cristopheroan
+ */
+
+public class singletronLazyHolder {
+    
+    public static class InstanceHolder;
+    public static singletronLazyHolder instancia = singletronLazyHolder;
+
+    private singletronLazyHolder() {
+        super();
+    }
+
+    public static singletronLazyHolder getInstancia() {
+        return InstanceHolder.instancia;⁹
+    }
+
+}
